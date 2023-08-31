@@ -131,13 +131,8 @@ void excluirElemento()
 		for (int i = 0; i < nElementos; i++) {
 			if (lista[i] != numeroExc) {
 				substituir[indicesubst] = lista[i];
+				indicesubst++;
 			}
-			else
-			{
-				i++;
-				substituir[indicesubst] = lista[i];
-			}
-			indicesubst++;
 		}
 		for (int i = 0; i < nElementos; i++) {
 			lista[i] = substituir[i];
